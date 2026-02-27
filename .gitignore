@@ -67,3 +67,7 @@ Pipfile.lock
 
 *.sublime-project
 *.sublime-workspace
+
+# Virtual env
+.venv/
+venv/
