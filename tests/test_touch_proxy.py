@@ -1,7 +1,7 @@
 # encoding=utf-8
 import unittest
-from airtest.core.android.android import Android
-from airtest.core.android.touch_methods.touch_proxy import TouchProxy
+from AirtestPro.core.android.android import Android
+from AirtestPro.core.android.touch_methods.touch_proxy import TouchProxy
 import warnings
 warnings.simplefilter("always")
 

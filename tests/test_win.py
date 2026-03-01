@@ -1,5 +1,5 @@
 # encoding=utf-8
-from airtest.core.win import Windows
+from AirtestPro.core.win import Windows
 import unittest
 import numpy
 import win32api

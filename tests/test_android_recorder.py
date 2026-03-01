@@ -2,9 +2,9 @@
 import os
 import time
 import unittest
-from airtest.core.android.android import Android
-from airtest.core.android.recorder import Recorder
-from airtest.core.error import AirtestError
+from AirtestPro.core.android.android import Android
+from AirtestPro.core.android.recorder import Recorder
+from AirtestPro.core.error import AirtestError
 from .testconf import try_remove
 import warnings
 warnings.simplefilter("always")

@@ -25,8 +25,10 @@
 	 - 方法名列表：`["kaze", "brisk", "akaze", "orb", "sift", "surf", "brief"]`
 
 ### 3、Airtest脚本图像匹配方法的设定方式：
+
 ```python
-from airtest.core.settings import Settings as ST
+from AirtestPro.core.settings import Settings as ST
+
 # 脚本运行时将按照此算法顺序识别，直到“找到符合设定阈值的识别结果”或“识别超时”:
 ST.CVSTRATEGY = ["surf", "tpl"]
 ```

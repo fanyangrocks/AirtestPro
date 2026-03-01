@@ -5,12 +5,12 @@
 
 
 import unittest
-from airtest.aircv import imread
-from airtest.aircv.keypoint_matching import *  # noqa
-from airtest.aircv.keypoint_matching_contrib import *  # noqa
-from airtest.aircv.template_matching import *  # noqa
-from airtest.aircv.sift import find_sift
-from airtest.aircv.template import find_template, find_all_template
+from AirtestPro.aircv import imread
+from AirtestPro.aircv.keypoint_matching import *  # noqa
+from AirtestPro.aircv.keypoint_matching_contrib import *  # noqa
+from AirtestPro.aircv.template_matching import *  # noqa
+from AirtestPro.aircv.sift import find_sift
+from AirtestPro.aircv.template import find_template, find_all_template
 
 
 class TestAircv(unittest.TestCase):

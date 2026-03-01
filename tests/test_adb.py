@@ -1,5 +1,5 @@
 # encoding=utf-8
-from airtest.core.android.adb import ADB, AdbError, AdbShellError, DeviceConnectionError
+from AirtestPro.core.android.adb import ADB, AdbError, AdbShellError, DeviceConnectionError
 from testconf import IMG, APK, PKG, try_remove
 from types import GeneratorType
 import os
@@ -59,7 +59,7 @@ class TestADBWithDevice(unittest.TestCase):
         # devices = ADB().devices(state="device")
         # if not devices:
         #     raise RuntimeError("At lease one adb device required")
-        from airtest.core.api import connect_device
+        from AirtestPro.core.api import connect_device
         device = connect_device("android://10.249.90.143:5039/RFCN20CZGDN")
         cls.adb = device.adb
         # cls.adb = ADB(devices[0][0])

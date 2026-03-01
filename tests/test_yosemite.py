@@ -1,6 +1,6 @@
 # encoding=utf-8
-from airtest.core.android.android import ADB, Javacap, YosemiteIme, YosemiteExt
-from airtest.aircv.utils import string_2_img
+from AirtestPro.core.android.android import ADB, Javacap, YosemiteIme, YosemiteExt
+from AirtestPro.aircv.utils import string_2_img
 from numpy import ndarray
 import unittest
 import warnings

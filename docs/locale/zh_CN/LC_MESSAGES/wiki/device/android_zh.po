@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest \n"
+"Project-Id-Version: airtest_pro \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-28 21:00+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -58,12 +58,12 @@ msgid "adb是谷歌官方推出的Android命令行工具，可以让我们跟设
 msgstr ""
 
 #: ../../wiki/device/android_zh.md:20
-msgid "我们已经在airtest\\airtest\\core\\android\\static\\adb目录下，存放了各平台的adb可执行文件，大家无需下载也可以使用。"
+msgid "我们已经在airtest\\airtest_pro\\core\\android\\static\\adb目录下，存放了各平台的adb可执行文件，大家无需下载也可以使用。"
 msgstr ""
 
 #: ../../wiki/device/android_zh.md:22
 msgid ""
-"以windows为例，可以先使用终端进入到adb.exe所在的目录下（在airtest\\airtest\\core\\android\\static\\adb\\windows目录下shift+右键打开命令行终端），然后执行adb"
+"以windows为例，可以先使用终端进入到adb.exe所在的目录下（在airtest\\airtest_pro\\core\\android\\static\\adb\\windows目录下shift+右键打开命令行终端），然后执行adb"
 " devices命令行："
 msgstr ""
 
@@ -382,6 +382,6 @@ msgstr ""
 #~ msgid "adb是谷歌官方推出的Android命令行工具，可以让我们跟设备进行通信，官方地址。"
 #~ msgstr ""
 
-#~ msgid "我们在airtest\\airtest\\core\\android\\static\\adb目录下，存放了各平台的adb可执行文件，大家无需额外下载也可以使用。"
+#~ msgid "我们在airtest\\airtest_pro\\core\\android\\static\\adb目录下，存放了各平台的adb可执行文件，大家无需额外下载也可以使用。"
 #~ msgstr ""
 

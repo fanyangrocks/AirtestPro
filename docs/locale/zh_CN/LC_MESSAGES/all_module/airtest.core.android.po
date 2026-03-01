@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest\n"
+"Project-Id-Version: airtest_pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-21 14:38+0800\n"
 "PO-Revision-Date: 2021-06-21 14:39+0800\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 
 #: ../../all_module/airtest.core.android.rst:2
-msgid "airtest.core.android package"
+msgid "airtest_pro.core.android package"
 msgstr ""
 
 #: airtest.core.android:1 of
@@ -28,10 +28,10 @@ msgstr ""
 #: ../../all_module/airtest.core.android.rst:9
 msgid ""
 "For the interface provided for the Android platform, please refer to: "
-"`airtest.core.android.Android class <airtest.core.android.android.html>`_"
+"`airtest_pro.core.android.Android class <airtest_pro.core.android.android.html>`_"
 msgstr ""
-"为Android平台提供的接口，请参考：`airtest.core.android.Android class "
-"<airtest.core.android.android.html>`_"
+"为Android平台提供的接口，请参考：`airtest_pro.core.android.Android class "
+"<airtest_pro.core.android.android.html>`_"
 
 #: ../../all_module/airtest.core.android.rst:12
 msgid "Subpackages"

@@ -1,7 +1,7 @@
 # -*- encoding=utf8 -*-
 __author__ = "刘欣"
 
-from airtest.core.api import *
+from AirtestPro.core.api import *
 import os
 
 auto_setup(__file__)

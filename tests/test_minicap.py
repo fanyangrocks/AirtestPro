@@ -1,7 +1,7 @@
 # encoding=utf-8
-from airtest.core.android.android import Android
-from airtest.core.android.cap_methods.minicap import Minicap
-from airtest.aircv.utils import string_2_img
+from AirtestPro.core.android.android import Android
+from AirtestPro.core.android.cap_methods.minicap import Minicap
+from AirtestPro.aircv.utils import string_2_img
 from numpy import ndarray
 from .testconf import PKG
 import time

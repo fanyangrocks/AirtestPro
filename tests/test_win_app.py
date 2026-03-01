@@ -1,6 +1,6 @@
 # encoding=utf-8
 from tkinter import W
-from airtest.core.win import Windows
+from AirtestPro.core.win import Windows
 import unittest
 import numpy
 import time

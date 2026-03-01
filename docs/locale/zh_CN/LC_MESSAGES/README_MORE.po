@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest\n"
+"Project-Id-Version: airtest_pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-21 14:14+0800\n"
 "PO-Revision-Date: 2021-06-21 14:17+0800\n"
@@ -153,7 +153,7 @@ msgstr "你也可以直接从Git仓库安装。"
 
 #: ../../README_MORE.rst:85
 msgid ""
-"Use ``-e`` here to install airtest in develop mode since this repo is in rapid development. "
+"Use ``-e`` here to install airtest_pro in develop mode since this repo is in rapid development. "
 "Then you can upgrade the repo with ``git pull`` later."
 msgstr ""
 "因为Airtest还在快速开发中，这里使用 ``-e`` 来安装源码。以后你就可以直接使用 ``git pull`` 更"
@@ -365,15 +365,15 @@ msgid "general APIs: `API reference`_"
 msgstr "通用 APIs: `API reference`_"
 
 #: ../../README_MORE.rst:240
-msgid "Android: `airtest.core.android.Android class`_"
+msgid "Android: `airtest_pro.core.android.Android class`_"
 msgstr ""
 
 #: ../../README_MORE.rst:241
-msgid "Windows: `airtest.core.win.Windows class`_"
+msgid "Windows: `airtest_pro.core.win.Windows class`_"
 msgstr ""
 
 #: ../../README_MORE.rst:242
-msgid "iOS: `airtest.core.ios.IOS class`_"
+msgid "iOS: `airtest_pro.core.ios.IOS class`_"
 msgstr ""
 
 #: ../../README_MORE.rst:257
@@ -429,11 +429,11 @@ msgstr ""
 
 #: ../../README_MORE.rst:277
 msgid ""
-"Following examples demonstrate the basic usage of airtest framework running from CLI. For a "
-"deeper understanding, try running provided automated cases: ``airtest/playground/"
+"Following examples demonstrate the basic usage of airtest_pro framework running from CLI. For a "
+"deeper understanding, try running provided automated cases: ``airtest_pro/playground/"
 "test_blackjack.air``"
 msgstr ""
-"下面的例子介绍了命令行的基本用法。可以配合我们提供的示例 ``airtest/playground/"
+"下面的例子介绍了命令行的基本用法。可以配合我们提供的示例 ``airtest_pro/playground/"
 "test_blackjack.air/`` 来学习使用："
 
 #: ../../README_MORE.rst:281

@@ -3,8 +3,8 @@
 import os
 import win32gui
 from pywinauto.win32structures import RECT
-from airtest import aircv
-from airtest.core.win.win import Windows, screenshot
+from AirtestPro import aircv
+from AirtestPro.core.win.win import Windows, screenshot
 
 
 class WindowsInIDE(Windows):
@@ -79,7 +79,7 @@ class WindowsInIDE(Windows):
         return img
 
 if __name__ == '__main__':
-    from airtest.core.api import G
-    from airtest.cli.__main__ import main
+    from AirtestPro.core.api import G
+    from AirtestPro.cli.__main__ import main
     G.register_custom_device(WindowsInIDE)
     main()

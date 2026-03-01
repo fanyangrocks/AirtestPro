@@ -3,8 +3,8 @@ Android custom motions sample, only support minitouch and maxtouch
 Android自定义手势示例代码，仅支持minitouch和maxtouch两种模式
 """
 
-from airtest.core.api import *
-from airtest.core.android.touch_methods.base_touch import *
+from AirtestPro.core.api import *
+from AirtestPro.core.android.touch_methods.base_touch import *
 
 
 connect_device("Android:///")

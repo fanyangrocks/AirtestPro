@@ -2,7 +2,7 @@ import os
 import unittest
 import threading
 import time
-from airtest.core.ios.goios_helper import GOIOSHelper
+from AirtestPro.core.ios.goios_helper import GOIOSHelper
 
 
 class GOIOSTests(unittest.TestCase):

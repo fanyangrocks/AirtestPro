@@ -2,7 +2,7 @@
 import os
 import time
 import unittest
-from airtest.core.ios.ios import IOS
+from AirtestPro.core.ios.ios import IOS
 from .testconf import is_port_open
 DEFAULT_ADDR = "http://localhost:8100/"  # iOS设备连接参数
 import warnings

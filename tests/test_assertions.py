@@ -1,14 +1,14 @@
 # encoding=utf-8
-# from airtest.core.api import *
+# from airtest_pro.core.api import *
 import os
-from airtest.core.api import connect_device, start_app, stop_app, install
-from airtest.core.assertions import *
-from airtest.core.helper import G
-from airtest.core.settings import Settings as ST
-from airtest.core.cv import Template
-from airtest.core.android.android import Android, CAP_METHOD
-from airtest.core.error import TargetNotFoundError, AdbShellError
-from airtest.report.report import DEFAULT_LOG_DIR
+from AirtestPro.core.api import connect_device, start_app, stop_app, install
+from AirtestPro.core.assertions import *
+from AirtestPro.core.helper import G
+from AirtestPro.core.settings import Settings as ST
+from AirtestPro.core.cv import Template
+from AirtestPro.core.android.android import Android, CAP_METHOD
+from AirtestPro.core.error import TargetNotFoundError, AdbShellError
+from AirtestPro.report.report import DEFAULT_LOG_DIR
 from .testconf import APK, PKG, TPL, TPL2, DIR, try_remove
 import unittest
 import warnings

@@ -280,7 +280,8 @@ If you call the screen recording interface in the code, you can control the clar
 For example, to record a 30-second video with the lowest definition and export it to `test.mp4` in the current directory:
 
 ```python
-from airtest.core.api import connect_device, sleep
+from AirtestPro.core.api import connect_device, sleep
+
 dev = connect_device("Android:///")
 # Record the screen with the lowest quality
 dev.start_recording(bit_rate_level=1)

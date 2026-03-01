@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest \n"
+"Project-Id-Version: airtest_pro \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-21 14:38+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Generated-By: Babel 2.9.0\n"
 
 #: ../../all_module/airtest.core.ios.ios.rst:2
-msgid "airtest.core.ios.ios module"
+msgid "airtest_pro.core.ios.ios module"
 msgstr ""
 
 #: airtest.core.ios.ios.decorator_retry_session:1 of
@@ -40,7 +40,7 @@ msgid "为class里的所有method添加装饰器 ``decorator_retry_session``"
 msgstr ""
 
 #: airtest.core.ios.ios.IOS:1 of
-msgid "基类：:class:`airtest.core.device.Device`"
+msgid "基类：:class:`airtest_pro.core.device.Device`"
 msgstr ""
 
 #: airtest.core.ios.ios.IOS:1 of
@@ -382,7 +382,7 @@ msgstr ""
 msgid "some devices can Horizontal screen on the home interface"
 msgstr ""
 
-#~ msgid "Bases: :class:`airtest.core.device.Device`"
+#~ msgid "Bases: :class:`airtest_pro.core.device.Device`"
 #~ msgstr ""
 
 #~ msgid ""
@@ -411,7 +411,7 @@ msgstr ""
 #~ msgid "Returns"
 #~ msgstr ""
 
-#~ msgid "基类：:class:`airtest.core.device.Device`"
+#~ msgid "基类：:class:`airtest_pro.core.device.Device`"
 #~ msgstr ""
 
 #~ msgid "返回"
@@ -426,7 +426,7 @@ msgstr ""
 #~ msgid "Parameters"
 #~ msgstr ""
 
-#~ msgid "airtest\\.core\\.ios\\.ios module"
+#~ msgid "airtest_pro\\.core\\.ios\\.ios module"
 #~ msgstr ""
 
 #~ msgid "参数"

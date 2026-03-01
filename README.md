@@ -28,16 +28,16 @@ Get started from [airtest homepage](http://airtest.netease.com/)
 Use `pip` to install the Airtest python library. 
 
 ```Shell
-pip install -U airtest
+pip install -U airtest_pro
 ```
 
 On MacOS/Linux platform, you need to grant adb execute permission.
 
 ```Shell
 # for mac
-cd {your_python_path}/site-packages/airtest/core/android/static/adb/mac
+cd {your_python_path}/site-packages/airtest_pro/core/android/static/adb/mac
 # for linux
-# cd {your_python_path}/site-packages/airtest/core/android/static/adb/linux
+# cd {your_python_path}/site-packages/airtest_pro/core/android/static/adb/linux
 chmod +x adb
 ```
 
@@ -55,10 +55,10 @@ Airtest aims at providing platform-independent API so that you can write automat
 
 1. Using [connect_device](http://airtest.readthedocs.io/en/latest/README_MORE.html#connect-device) API you can connect to any android/iOS device or windows application.
 1. Then perform [simulated input](http://airtest.readthedocs.io/en/latest/README_MORE.html#simulate-input) to automate your game or app.
-1. **DO NOT** forget to [make assertions](http://airtest.readthedocs.io/en/latest/README_MORE.html#make-assertion) of the expected result. 
+1. **DO NOT** forget to [make assertions](http://airtest.readthedocs.io/en/latest/README_MORE.html#make-assertion) of the expected result.
 
 ```Python
-from airtest.core.api import *
+from AirtestPro.core.api import *
 
 # connect an android phone with adb
 init_device("Android")
@@ -75,7 +75,7 @@ home()
 uninstall("package_name_of_your_apk")
 ```
 
-For more detailed info, please refer to [Airtest Python API reference](http://airtest.readthedocs.io/en/latest/all_module/airtest.core.api.html) or take a look at [API code](./airtest/core/api.py)
+For more detailed info, please refer to [Airtest Python API reference](http://airtest.readthedocs.io/en/latest/all_module/airtest.core.api.html) or take a look at [API code](airtest_pro/core/api.py)
 
 
 ## Running ``.air`` cases from CLI
@@ -85,16 +85,16 @@ Airtest CLI provides the possibility to execute cases on different host machines
 
 ```Shell
 # run cases targeting on Android phone connected to your host machine via ADB
-airtest run "path to your .air dir" --device Android:///
+airtest_pro run "path to your .air dir" --device Android:///
 
 # run cases targeting on Windows application whose title matches Unity.*
-airtest run "path to your .air dir" --device "Windows:///?title_re=Unity.*"
+airtest_pro run "path to your .air dir" --device "Windows:///?title_re=Unity.*"
 
 # generate HTML report after running cases
-airtest report "path to your .air dir"
+airtest_pro report "path to your .air dir"
 
 # or use as a python module
-python -m airtest run "path to your .air dir" --device Android:///
+python -m airtest_pro run "path to your .air dir" --device Android:///
 ```
 
 Try running provided example case: [``airtest/playground/test_blackjack.air``](./playground/test_blackjack.air) and see [Usage of CLI](http://airtest.readthedocs.io/en/latest/README_MORE.html#running-air-from-cli). Here is a [multi-device runner sample](https://github.com/AirtestProject/multi-device-runner).

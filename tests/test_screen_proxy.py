@@ -1,8 +1,8 @@
 # encoding=utf-8
-from airtest.core.android.android import Android
-from airtest.core.android.cap_methods.screen_proxy import ScreenProxy
-from airtest.core.android.cap_methods.minicap import Minicap
-from airtest.aircv.utils import string_2_img
+from AirtestPro.core.android.android import Android
+from AirtestPro.core.android.cap_methods.screen_proxy import ScreenProxy
+from AirtestPro.core.android.cap_methods.minicap import Minicap
+from AirtestPro.aircv.utils import string_2_img
 from numpy import ndarray
 import unittest
 import warnings
@@ -80,7 +80,7 @@ class TestScreenProxy(unittest.TestCase):
         Returns:
 
         """
-        from airtest.core.android.cap_methods.base_cap import BaseCap
+        from AirtestPro.core.android.cap_methods.base_cap import BaseCap
 
         class TestCap(BaseCap):
             def get_frame_from_stream(self):

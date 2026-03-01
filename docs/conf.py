@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# airtest documentation build configuration file, created by
+# airtest_pro documentation build configuration file, created by
 # sphinx-quickstart on Wed May 24 16:03:13 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -35,7 +35,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath('..'))
 
-import airtest
+import AirtestPro
 from recommonmark.parser import CommonMarkParser
 
 
@@ -53,7 +53,7 @@ win_mock_list = [
             'pywinauto.application',
             'pywinauto.win32functions',
             'pywinauto.win32structures',
-            'airtest.core.win.ctypesinput'
+            'airtest_pro.core.win.ctypesinput'
             ]
 ios_mock_list = [
     'tidevice', 'tidevice._usbmux', 'tidevice._device', 'tidevice._proto', 'tidevice.exceptions', ]
@@ -90,7 +90,7 @@ html_extra_path = ["./demo.mp4"]
 master_doc = 'index'
 
 # General information about the project.
-project = u'airtest'
+project = u'airtest_pro'
 copyright = u'2018, Game-Netease'
 author = u'Game-Netease'
 
@@ -174,7 +174,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'airtest.tex', u'airtest Documentation',
+    (master_doc, 'airtest_pro.tex', u'airtest_pro Documentation',
      u'Game-Netease', 'manual'),
 ]
 
@@ -184,7 +184,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'airtest', u'airtest Documentation',
+    (master_doc, 'airtest_pro', u'airtest_pro Documentation',
      [author], 1)
 ]
 
@@ -195,8 +195,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'airtest', u'airtest Documentation',
-     author, 'airtest', 'One line description of project.',
+    (master_doc, 'airtest_pro', u'airtest_pro Documentation',
+     author, 'airtest_pro', 'One line description of project.',
      'Miscellaneous'),
 ]
 

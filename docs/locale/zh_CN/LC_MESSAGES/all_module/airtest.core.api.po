@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest\n"
+"Project-Id-Version: airtest_pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-21 14:38+0800\n"
 "PO-Revision-Date: 2021-06-21 15:59+0800\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 
 #: ../../all_module/airtest.core.api.rst:2
-msgid "airtest.core.api module"
+msgid "airtest_pro.core.api module"
 msgstr ""
 
 #: airtest.core.api:1 of
@@ -418,7 +418,7 @@ msgid "``Android``: it is equivalent to executing ``adb shell input keyevent KEY
 msgstr "``Android``: 相当于执行了 ``adb shell input keyevent KEYNAME`` ::"
 
 #: airtest.core.api.keyevent:20 of
-msgid "Module :py:mod:`airtest.core.android.adb.ADB.keyevent`"
+msgid "Module :py:mod:`airtest_pro.core.android.adb.ADB.keyevent`"
 msgstr ""
 
 #: airtest.core.api.keyevent:20 of
@@ -438,7 +438,7 @@ msgid "``Windows``: Use ``pywinauto.keyboard`` module for key input::"
 msgstr "``Windows``: 使用 ``pywinauto.keyboard`` 进行按键点击::"
 
 #: airtest.core.api.keyevent:32 of
-msgid "Module :py:mod:`airtest.core.win.win.Windows.keyevent`"
+msgid "Module :py:mod:`airtest_pro.core.win.win.Windows.keyevent`"
 msgstr ""
 
 #: airtest.core.api.keyevent:34 of
@@ -470,7 +470,7 @@ msgid "On Android, sometimes you need to click the search button after typing::"
 msgstr "在Android上，有时你需要在输入完毕后点击搜索按钮::"
 
 #: airtest.core.api.text:18 of
-msgid "Module :py:mod:`airtest.core.android.ime.YosemiteIme.code`"
+msgid "Module :py:mod:`airtest_pro.core.android.ime.YosemiteIme.code`"
 msgstr ""
 
 #: airtest.core.api.text:20 of
@@ -684,7 +684,7 @@ msgstr "如果断言异常"
 #~ "pinch('out', center=(100, 100))"
 #~ msgstr ""
 
-#~ msgid "airtest\\.core\\.api module"
+#~ msgid "airtest_pro\\.core\\.api module"
 #~ msgstr ""
 
 #~ msgid "``iOS``: Only supports HOME key::"

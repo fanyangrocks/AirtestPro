@@ -1,6 +1,6 @@
 import unittest
 
-from airtest.utils.apkparser import APK as apkparser
+from AirtestPro.utils.apkparser import APK as apkparser
 from testconf import APK, PKG
 
 

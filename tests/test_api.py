@@ -1,8 +1,8 @@
 # encoding=utf-8
-from airtest.core.api import *
-from airtest.core.helper import G
-from airtest.core.android.android import Android, CAP_METHOD
-from airtest.core.error import TargetNotFoundError, AdbShellError
+from AirtestPro.core.api import *
+from AirtestPro.core.helper import G
+from AirtestPro.core.android.android import Android, CAP_METHOD
+from AirtestPro.core.error import TargetNotFoundError, AdbShellError
 from .testconf import APK, PKG, TPL, TPL2, DIR
 import unittest
 

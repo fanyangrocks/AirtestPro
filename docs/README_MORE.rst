@@ -244,7 +244,25 @@ Airtest also provides some platform-specific APIs for each platform, which can b
 
 .. code:: python
 
-    >>> from airtest.core.api import *
+    >>> from AirtestPro.core.api import *
+            >>> connect_device("Android:///")
+            >>> dev = device()  # get current device, which is an Android object
+            >>> print(type(dev))
+            <class 'airtest.core.android.android.Android'>
+            >>> dev.get_top_activity()  # use Android ADB to get the top activity
+            ('com.google.android.apps.nexuslauncher', '.NexusLauncherActivity', '2720')
+        >>> connect_device("Android:///")
+        >>> dev = device()  # get current device, which is an Android object
+        >>> print(type(dev))
+        <class 'airtest.core.android.android.Android'>
+        >>> dev.get_top_activity()  # use Android ADB to get the top activity
+        ('com.google.android.apps.nexuslauncher', '.NexusLauncherActivity', '2720')
+        >>> connect_device("Android:///")
+        >>> dev = device()  # get current device, which is an Android object
+        >>> print(type(dev))
+        <class 'airtest.core.android.android.Android'>
+        >>> dev.get_top_activity()  # use Android ADB to get the top activity
+        ('com.google.android.apps.nexuslauncher', '.NexusLauncherActivity', '2720')
     >>> connect_device("Android:///")
     >>> dev = device()  # get current device, which is an Android object
     >>> print(type(dev))

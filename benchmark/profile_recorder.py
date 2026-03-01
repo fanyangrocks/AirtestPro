@@ -12,9 +12,9 @@ import numpy as np
 from copy import deepcopy
 from random import random
 
-from airtest.aircv import imread, mark_point
-from airtest.aircv.keypoint_matching import KAZEMatching, BRISKMatching, AKAZEMatching, ORBMatching
-from airtest.aircv.keypoint_matching_contrib import SIFTMatching, SURFMatching, BRIEFMatching
+from AirtestPro.aircv import imread, mark_point
+from AirtestPro.aircv.keypoint_matching import KAZEMatching, BRISKMatching, AKAZEMatching, ORBMatching
+from AirtestPro.aircv.keypoint_matching_contrib import SIFTMatching, SURFMatching, BRIEFMatching
 
 
 class CheckKeypointResult(object):
@@ -94,7 +94,7 @@ class CheckKeypointResult(object):
                 pos = (int(kp.pt[0]), int(kp.pt[1]))
                 mark_point(im_source, pos, circle=False, color=color, radius=10)
 
-            from airtest.aircv import show
+            from AirtestPro.aircv import show
             show(plot_img)
             show(im_search)
             show(im_source)

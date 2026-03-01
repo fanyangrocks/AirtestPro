@@ -2,8 +2,8 @@
 import os
 import time
 import unittest
-from airtest.core.ios.ios import IOS, CAP_METHOD
-from airtest import aircv
+from AirtestPro.core.ios.ios import IOS, CAP_METHOD
+from AirtestPro import aircv
 from testconf import try_remove, is_port_open
 import warnings
 warnings.simplefilter("always")

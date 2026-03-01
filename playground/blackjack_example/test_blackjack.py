@@ -2,8 +2,8 @@
 
 __author__ = "刘欣"
 
-from airtest.core.api import *
-from airtest.cli.parser import cli_setup
+from AirtestPro.core.api import *
+from AirtestPro.cli.parser import cli_setup
 
 
 PKG = "org.cocos2d.blackjack"
@@ -43,5 +43,5 @@ snapshot(msg="app stopped")
 print("test finished")
 
 # generate html report
-from airtest.report.report import simple_report
+from AirtestPro.report.report import simple_report
 simple_report(__file__)

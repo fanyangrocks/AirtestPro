@@ -28,8 +28,10 @@
 	 - names: `["kaze", "brisk", "akaze", "orb", "sift", "surf", "brief"]`
 
 ### ③ How to set matching methods in Airtest scripts:
+
 ```python
-from airtest.core.settings import Settings as ST
+from AirtestPro.core.settings import Settings as ST
+
 # image matching will follow the method list, until the result is found or timeout:
 ST.CVSTRATEGY = ["surf", "tpl"]
 ```

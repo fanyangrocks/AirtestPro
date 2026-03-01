@@ -46,8 +46,8 @@ def parse_requirements(filename):
 
 
 setup(
-    name='airtest',
-    version=get_version("airtest/utils/version.py"),
+    name='airtest_pro',
+    version=get_version("airtest_pro/utils/version.py"),
     author='Netease Games',
     author_email='rockywhisper@163.com',
     description='UI Test Automation Framework for Games and Apps on Android/iOS/Windows/Linux',
@@ -57,9 +57,9 @@ setup(
     keywords=['automation', 'automated-test', 'game', 'android', 'ios', 'windows', 'linux'],
     packages=find_packages(exclude=['cover', 'playground', 'tests', 'dist']),
     package_data={
-        'android_deps': ["*.apk", "airtest/core/android/static"],
-        'html_statics': ["airtest/report"],
-        'ios_deps': ["airtest/core/ios/iproxy", "airtest/core/ios/goios"],
+        'android_deps': ["*.apk", "airtest_pro/core/android/static"],
+        'html_statics': ["airtest_pro/report"],
+        'ios_deps': ["airtest_pro/core/ios/iproxy", "airtest_pro/core/ios/goios"],
     },
     include_package_data=True,
     install_requires=parse_requirements('requirements.txt'),
@@ -75,7 +75,7 @@ setup(
         ]},
     entry_points="""
     [console_scripts]
-    airtest = airtest.cli.__main__:main
+    airtest_pro = airtest_pro.cli.__main__:main
     """,
     classifiers=[
         'Programming Language :: Python :: 3.3',

@@ -4,8 +4,8 @@ import time
 import numpy
 import unittest
 from threading import Thread
-from airtest.core.android.android import Android, ADB, Minicap, Minitouch, IME_METHOD, CAP_METHOD, TOUCH_METHOD
-from airtest.core.error import AirtestError
+from AirtestPro.core.android.android import Android, ADB, Minicap, Minitouch, IME_METHOD, CAP_METHOD, TOUCH_METHOD
+from AirtestPro.core.error import AirtestError
 from .testconf import APK, PKG, try_remove
 import warnings
 warnings.simplefilter("always")

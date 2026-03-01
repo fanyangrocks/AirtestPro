@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest \n"
+"Project-Id-Version: airtest_pro \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-21 14:38+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Generated-By: Babel 2.9.0\n"
 
 #: ../../all_module/airtest.core.ios.instruct_cmd.rst:2
-msgid "airtest.core.ios.instruct\\_cmd module"
+msgid "airtest_pro.core.ios.instruct\\_cmd module"
 msgstr ""
 
 #: airtest.core.ios.instruct_cmd.InstructHelper:1 of

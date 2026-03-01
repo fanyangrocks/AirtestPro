@@ -1,0 +1,145 @@
+[build-system]
+requires = ["setuptools==45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airtest-pro"
+version = "0.0.1"
+authors = [
+    {name = "Fan Yang", email = "fanyangrocks@163.com"}
+]
+description = "UI Test Automation Framework for Games and Apps on Android/iOS/Windows/Linux"
+readme = "README.md"
+license = {text = "Apache License 2.0"}
+keywords = ["automation", "automated-test", "game", "android", "ios", "windows", "linux"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Quality Assurance"
+]
+requires-python = ">=3.11"
+dependencies = [
+    "Jinja2>=2.8",
+    "Pillow>=3.4.0",
+    "requests>=2.11.1",
+    "six>=1.9.0,<=1.16.0",
+    "mss==6.1.0",
+    "numpy<2.0",
+    "opencv-contrib-python>=4.4.0.46,<=4.6.0.66",
+    "facebook-wda==1.5.0",
+    "pywinauto==0.6.3",
+    "filelock",
+    "ffmpeg-python",
+    "tidevice",
+    "psutil",
+    "packaging"
+]
+
+[project.optional-dependencies]
+tests = [
+    "nose"
+]
+docs = [
+    "sphinx",
+    "recommonmark",
+    "sphinx_rtd_theme",
+    "mock"
+]
+
+[project.urls]
+Homepage = "https://github.com/AirtestProject/Airtest"
+Documentation = "http://airtest.readthedocs.io/"
+Repository = "https://github.com/AirtestProject/Airtest.git"
+Issues = "https://github.com/AirtestProject/Airtest/issues"
+
+[project.scripts]
+airtestpro = "airtest_pro.cli.__main__:main"
+
+[tool.setuptools]
+packages = {find = {exclude = ["cover", "playground", "tests", "dist"]}}
+include-package-data = true
+
+[tool.setuptools.package-data]
+android_deps = ["*.apk", "airtest_pro/core/android/static"]
+html_statics = ["airtest_pro/report"]
+ios_deps = ["airtest_pro/core/ios/iproxy", "airtest_pro/core/ios/goios"]
+
+[tool.flake8]
+exclude = ["*.air", ".git", "__pycache__", "build", "dist"]
+max-line-length = 127
+max-complexity = 10
+select = ["E901", "E999", "F821", "F822", "F823"]
+
+[tool.coverage.run]
+source = ["airtest_pro"]
+omit = [
+    "*/tests/*",
+    "*/playground/*",
+    "*/benchmark/*",
+    "setup.py"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 88
+target-version = ['py36', 'py37', 'py38', 'py39']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+  | cover
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["airtest_pro"]
+known_third_party = [
+    "Jinja2",
+    "Pillow", 
+    "requests",
+    "six",
+    "mss",
+    "numpy",
+    "cv2",
+    "facebook_wda",
+    "pywinauto",
+    "filelock",
+    "ffmpeg",
+    "tidevice",
+    "psutil",
+    "packaging"
+]

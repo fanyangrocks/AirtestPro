@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 import os
 import unittest
-from airtest.core.android.android import ADB
-from airtest.core.helper import G
-from airtest.__main__ import main as main_parser
+from AirtestPro.core.android.android import ADB
+from AirtestPro.core.helper import G
+from AirtestPro.__main__ import main as main_parser
 from testconf import DIR, OWL, try_remove
 
 OUTPUT_HTML = "./log.html"

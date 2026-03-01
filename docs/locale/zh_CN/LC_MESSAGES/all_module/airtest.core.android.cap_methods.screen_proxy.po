@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest \n"
+"Project-Id-Version: airtest_pro \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-21 14:38+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Generated-By: Babel 2.9.0\n"
 
 #: ../../all_module/airtest.core.android.cap_methods.screen_proxy.rst:2
-msgid "airtest.core.android.cap\\_methods.screen\\_proxy module"
+msgid "airtest_pro.core.android.cap\\_methods.screen\\_proxy module"
 msgstr ""
 
 #: airtest.core.android.cap_methods.screen_proxy.ScreenProxy:1 of
@@ -43,7 +43,7 @@ msgid "参数"
 msgstr ""
 
 #: airtest.core.android.cap_methods.screen_proxy.ScreenProxy.check_frame:5 of
-msgid ":py:mod:`airtest.core.android.cap_methods.base_cap.BaseCap`"
+msgid ":py:mod:`airtest_pro.core.android.cap_methods.base_cap.BaseCap`"
 msgstr ""
 
 #: airtest.core.android.cap_methods.screen_proxy.ScreenProxy.check_frame:7 of
@@ -65,13 +65,13 @@ msgid "Custom method 自定义方法 > MINICAP > JAVACAP > ADBCAP"
 msgstr ""
 
 #: airtest.core.android.cap_methods.screen_proxy.ScreenProxy.auto_setup:8 of
-msgid ":py:mod:`airtest.core.android.adb.ADB`"
+msgid ":py:mod:`airtest_pro.core.android.adb.ADB`"
 msgstr ""
 
 #: airtest.core.android.cap_methods.screen_proxy.ScreenProxy.auto_setup:9 of
 msgid ""
 "String such as \"MINICAP\", or "
-":py:mod:`airtest.core.android.cap_methods.minicap.Minicap` object"
+":py:mod:`airtest_pro.core.android.cap_methods.minicap.Minicap` object"
 msgstr ""
 
 #: airtest.core.android.cap_methods.screen_proxy.ScreenProxy.auto_setup:11 of

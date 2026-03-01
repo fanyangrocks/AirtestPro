@@ -2,7 +2,7 @@ import os
 import unittest
 import threading
 import time
-from airtest.core.ios.tidevice_helper import TIDevice
+from AirtestPro.core.ios.tidevice_helper import TIDevice
 
 
 class TIDeviceTests(unittest.TestCase):

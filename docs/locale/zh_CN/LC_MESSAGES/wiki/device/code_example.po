@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest \n"
+"Project-Id-Version: airtest_pro \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-09 19:11+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -70,13 +70,13 @@ msgid "如何去除log信息"
 msgstr ""
 
 #: ../../wiki/device/code_example.md:30
-msgid "https://airtest.doc.io.netease.com/IDEdocs/faq/4_common%20problems/#1log"
+msgid "https://airtest_pro.doc.io.netease.com/IDEdocs/faq/4_common%20problems/#1log"
 msgstr ""
 
 #: ../../wiki/device/code_example.md:33
 msgid ""
 "DLL文件缺失  "
-"https://airtest.doc.io.netease.com/IDEdocs/faq/3_common%20problems"
+"https://airtest_pro.doc.io.netease.com/IDEdocs/faq/3_common%20problems"
 "/#1importerror-dll-load-failed"
 msgstr ""
 
@@ -85,6 +85,6 @@ msgid "如何局部截图"
 msgstr ""
 
 #: ../../wiki/device/code_example.md:38
-msgid "https://airtest.doc.io.netease.com/IDEdocs/faq/4_common%20problems/#8"
+msgid "https://airtest_pro.doc.io.netease.com/IDEdocs/faq/4_common%20problems/#8"
 msgstr ""
 

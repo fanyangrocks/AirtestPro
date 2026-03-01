@@ -1,4 +1,4 @@
-from airtest.report import report
+from AirtestPro.report import report
 
 
 class PocoReport(report.LogToHtml):

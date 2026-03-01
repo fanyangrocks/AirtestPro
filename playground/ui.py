@@ -6,10 +6,10 @@ import time
 import traceback
 from pprint import pprint
 
-import airtest.cli.runner
-import airtest.core.api
-from airtest.core.api import set_serialno, snapshot, logwrap
-from airtest.core.helper import log_in_func,G
+import AirtestPro.cli.runner
+import AirtestPro.core.api
+from AirtestPro.core.api import set_serialno, snapshot, logwrap
+from AirtestPro.core.helper import log_in_func,G
 from uiautomator import AutomatorDevice
 
 
@@ -63,7 +63,7 @@ def genlog(action, params, uiobj=None):
     global log, action_stack
 
     # transform action names
-    # avoid conflicting with airtest actions
+    # avoid conflicting with airtest_pro actions
     if action == 'swipe':
         action = 'ui.swipe'
 
@@ -116,7 +116,7 @@ def try_getattr(obj, attr, action, *args, **kwargs):
 
 
 def log_error(action, tb, *args, **kwargs):
-    logger = airtest.core.api.LOGGER
+    logger = AirtestPro.core.api.LOGGER
     start = time.time()
     fndata = {'name': action, 'args': args, 'kwargs': kwargs}
     logger.running_stack.append(fndata)
@@ -301,9 +301,9 @@ class AutomatorWrapper(object):
 
 
 def UiAutomator():
-    current_device = airtest.cli.runner.device()
+    current_device = AirtestPro.cli.runner.device()
     if not current_device:
         set_serialno()
-    current_device = airtest.cli.runner.device()
+    current_device = AirtestPro.cli.runner.device()
     dev = AutomatorDevice(current_device.serialno)
     return AutomatorWrapper(dev)

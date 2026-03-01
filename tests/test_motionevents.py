@@ -1,6 +1,6 @@
 # encoding=utf-8
-from airtest.core.android.android import ADB, Android
-from airtest.core.android.touch_methods.base_touch import MotionEvent, DownEvent, UpEvent, MoveEvent, SleepEvent
+from AirtestPro.core.android.android import ADB, Android
+from AirtestPro.core.android.touch_methods.base_touch import MotionEvent, DownEvent, UpEvent, MoveEvent, SleepEvent
 import unittest
 import warnings
 import time

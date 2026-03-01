@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 import os
 import unittest
-from airtest.core.android.android import ADB
-from airtest.core.helper import G
-from airtest.core.settings import Settings as ST
-from airtest.core.helper import set_logdir
-from airtest.__main__ import main as main_parser
-from airtest.report.report import LogToHtml, simple_report, DEFAULT_LOG_DIR, DEFAULT_LOG_FILE, HTML_FILE
+from AirtestPro.core.android.android import ADB
+from AirtestPro.core.helper import G
+from AirtestPro.core.settings import Settings as ST
+from AirtestPro.core.helper import set_logdir
+from AirtestPro.__main__ import main as main_parser
+from AirtestPro.report.report import LogToHtml, simple_report, DEFAULT_LOG_DIR, DEFAULT_LOG_FILE, HTML_FILE
 from testconf import DIR, OWL, try_remove
 
 

@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest \n"
+"Project-Id-Version: airtest_pro \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-28 21:00+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -392,7 +392,7 @@ msgid "lang, the language of the report (Chinese: zh; English: en)"
 msgstr ""
 
 #: ../../wiki/code/code_example.md:357
-msgid "plugins, plug-ins, will be used if poco or airtest-selenium is used"
+msgid "plugins, plug-ins, will be used if poco or airtest_pro-selenium is used"
 msgstr ""
 
 #: ../../wiki/code/code_example.md:359

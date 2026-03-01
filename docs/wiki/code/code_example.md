@@ -279,8 +279,8 @@ log("123", timestamp=time.time(), desc="This is title 04", snapshot=True)
 Airtest provides some global settings, in which `LOGFILE` is used to customize the name of the txt file that records the log content; `LOGDIR` is used to customize the save path of the log content, examples are as follows:
 
 ```python
-from airtest.core.settings import Settings as ST
-from airtest.core.helper import set_logdir
+from AirtestPro.core.settings import Settings as ST
+from AirtestPro.core.helper import set_logdir
 
 ST.LOG_FILE = "log123.txt"
 set_logdir(r'D:\test\1234.air\logs')
@@ -327,12 +327,14 @@ The 4 parameters that can be passed in represent:
 Examples are as follows:
 
 ```python
-from airtest.report.report import simple_report
+from AirtestPro.report.report import simple_report
+
 auto_setup(__file__, logdir=True)
 
 # N use case scripts are omitted here
 
-simple_report(__file__,logpath=True,logfile=r"D:\test\1234.air\log\log.txt",output=r"D:\test\1234.air\log\log1234.html")
+simple_report(__file__, logpath=True, logfile=r"D:\test\1234.air\log\log.txt",
+              output=r"D:\test\1234.air\log\log1234.html")
 ```
 
 
@@ -359,11 +361,12 @@ class LogToHtml(script_root, log_root=``, static_root='', export_dir=None, scrip
 When using `logtohtml` to generate a test report, we generally first instantiate a `logtohtml` object, and then use this object to call the class method `report()` to generate the report. An example is as follows:
 
 ```python
-from airtest.report.report import LogToHtml
+from AirtestPro.report.report import LogToHtml
 
 # N use case scripts are omitted here
 
-h1 = LogToHtml(script_root=r'D:\test\1234.air', log_root=r"D:\test\1234.air\log", export_dir=r"D:\test\1234.air" ,logfile= r'D:\test\1234.air\log\log.txt', lang='en', plugins=["poco.utils.airtest.report"])
+h1 = LogToHtml(script_root=r'D:\test\1234.air', log_root=r"D:\test\1234.air\log", export_dir=r"D:\test\1234.air",
+               logfile=r'D:\test\1234.air\log\log.txt', lang='en', plugins=["poco.utils.airtest_pro.report"])
 h1.report()
 ```
 
@@ -385,15 +388,15 @@ Partial screenshots or screenshots by coordinates are a frequently asked questio
 # -*- encoding=utf8 -*-
 __author__ = "AirtestProject"
 
-from airtest.core.api import *
-# crop_image() method is in airtest.aircv and needs to be introduced
-from airtest.aircv import *
+from AirtestPro.core.api import *
+# crop_image() method is in airtest_pro.aircv and needs to be introduced
+from AirtestPro.aircv import *
 
 auto_setup(__file__)
 screen = G.DEVICE.snapshot()
 
 # Partial screenshot
-screen = aircv.crop_image(screen,(0,160,1067,551))
+screen = aircv.crop_image(screen, (0, 160, 1067, 551))
 # Save partial screenshots to the log folder
 try_log_screen(screen)
 ```
@@ -407,13 +410,14 @@ Steps to find a partial picture:
 - Use the `match_in` method to find the specified screenshot object in the partial screenshot
 
 ```python
-from airtest.core.api import *
-from airtest.aircv import *
+from AirtestPro.core.api import *
+from AirtestPro.aircv import *
+
 auto_setup(__file__)
 
 screen = G.DEVICE.snapshot()
 # Partial screenshot
-local_screen = aircv.crop_image(screen,(0,949,1067,1500))
+local_screen = aircv.crop_image(screen, (0, 949, 1067, 1500))
 
 # Set our target screenshot as a Template object
 tempalte = Template(r"png_code/settings.png")
@@ -424,7 +428,7 @@ pos = tempalte.match_in(local_screen)
 print(pos)
 
 # To return the coordinates of the target in the entire screen, both x and y need to be added with the minimum x and y set during the partial screenshot
-print(pos[0]+0,pos[1]+949)
+print(pos[0] + 0, pos[1] + 949)
 ```
 
 ### How to set the report screenshot accuracy
@@ -432,7 +436,7 @@ print(pos[0]+0,pos[1]+949)
 `SNAPSHOT_QUALITY` is used to set the global screenshot compression accuracy, the default value is 10, and the value range is [1,100]. Examples are as follows:
 
 ```python
-from airtest.core.settings import Settings as ST
+from AirtestPro.core.settings import Settings as ST
 
 # Set the global screenshot accuracy to 90
 ST.SNAPSHOT_QUALITY = 90
@@ -451,7 +455,7 @@ snapshot(quality=90)
 In Airtest1.1.6, a new setting for specifying the maximum size of screenshots is added: `ST.IMAGE_MAXSIZE`. If it is set to 1200, the length and width of the last saved screenshot will not exceed 1200. Example:
 
 ```python
-from airtest.core.settings import Settings as ST
+from AirtestPro.core.settings import Settings as ST
 
 # Set the global screenshot size not to exceed 600*600, if not set, the default is the original image size
 ST.IMAGE_MAXSIZE = 600
@@ -559,11 +563,13 @@ else:
 If you want to call a public function encapsulated in another `.air` script in a `.air` script, you can do this:
 
 ```python
-from airtest.core.api import using
+from AirtestPro.core.api import using
+
 # Relative path or absolute path, make sure the code can be found
 using("common.air")
 
 from common import common_function
+
 common_function()
 ```
 
@@ -572,7 +578,8 @@ If the paths of the sub-scripts that need to be referenced are all placed in a c
 For example, if we create a script named `test1.air`, the actual path is `/User/test/project/test1.air`:
 
 ```python
-from airtest.core.api import *
+from AirtestPro.core.api import *
+
 
 def test():
     touch("tmp.png")
@@ -581,7 +588,7 @@ def test():
 Another `main.air` script in the same directory can refer to the `test` in it like this:
 
 ```python
-from airtest.core.api import *
+from AirtestPro.core.api import *
 
 ST.PROJECT_ROOT = "/User/test/project"
 using("test1.air")

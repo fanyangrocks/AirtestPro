@@ -1,4 +1,4 @@
-from airtest.core.cv import Template
+from AirtestPro.core.cv import Template
 
 import os
 import shutil

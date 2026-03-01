@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, Game-Netease
-# This file is distributed under the same license as the airtest package.
+# This file is distributed under the same license as the airtest_pro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: airtest \n"
+"Project-Id-Version: airtest_pro \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-28 21:00+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -70,7 +70,7 @@ msgstr ""
 #: ../../wiki/device/android.md:20
 msgid ""
 "We have stored adb executables for each platform under "
-"airtest\\airtest\\core\\Android\\static\\adb directory, you can use it "
+"airtest_pro\\airtest_pro\\core\\Android\\static\\adb directory, you can use it "
 "without downloading."
 msgstr ""
 
@@ -78,14 +78,14 @@ msgstr ""
 msgid ""
 "Take Windows as an example, you can first use the terminal to enter the "
 "directory where adb.exe is located (in "
-"airtest\\airtest\\core\\Android\\static\\adb\\Windows, shift+right click "
+"airtest_pro\\airtest_pro\\core\\Android\\static\\adb\\Windows, shift+right click "
 "to open the command line terminal), and then execute the command line of "
 "adb devices :"
 msgstr ""
 
 #: ../../wiki/device/android.md:33
 msgid ""
-"In MAC, you can visit airtest/core/android/static/adb/mac directory and "
+"In MAC, you can visit airtest_pro/core/android/static/adb/mac directory and "
 "run the ./adb devices, if the adb no executable permissions, can run "
 "chmod + x adb add executable permissions for it."
 msgstr ""
@@ -229,12 +229,12 @@ msgstr ""
 
 #: ../../wiki/device/android.md:125
 msgid ""
-"All interfaces defined in airtest.core.api can be used on the Android "
+"All interfaces defined in airtest_pro.core.api can be used on the Android "
 "platform and can be called directly in the script:"
 msgstr ""
 
 #: ../../wiki/device/android.md:136
-msgid "Can refer to airtest.core.api for the API list."
+msgid "Can refer to airtest_pro.core.api for the API list."
 msgstr ""
 
 #: ../../wiki/device/android.md:139
@@ -243,9 +243,9 @@ msgstr ""
 
 #: ../../wiki/device/android.md:141
 msgid ""
-"In addition to the cross-platform interface provided in airtest.core.api,"
+"In addition to the cross-platform interface provided in airtest_pro.core.api,"
 " Android device objects have many built-in interfaces that can be "
-"called,We can airtest core. Android. Android module in this document "
+"called,We can airtest_pro core. Android. Android module in this document "
 "refer to the android device object has a method, and then call something "
 "like this:"
 msgstr ""
@@ -327,7 +327,7 @@ msgstr ""
 
 #: ../../wiki/device/android.md:196
 msgid ""
-"In airtest.core.android.touch_methods.base_touch, defines four action "
+"In airtest_pro.core.android.touch_methods.base_touch, defines four action "
 "events:"
 msgstr ""
 
@@ -392,7 +392,7 @@ msgstr ""
 #: ../../wiki/device/android.md:256
 msgid ""
 "More examples, please refer to the "
-"airtest/playground/android_motionevents.py."
+"airtest_pro/playground/android_motionevents.py."
 msgstr ""
 
 #: ../../wiki/device/android.md:258

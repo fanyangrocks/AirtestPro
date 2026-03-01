@@ -281,7 +281,8 @@ airtest run "D:\test\Airtest_example.air"  --device android:/// --log logs/ --re
 例如，以最低清晰度录制一段30秒的视频，并导出到当前目录下的`test.mp4`：
 
 ```python
-from airtest.core.api import connect_device, sleep
+from AirtestPro.core.api import connect_device, sleep
+
 dev = connect_device("Android:///")
 # Record the screen with the lowest quality
 dev.start_recording(bit_rate_level=1)

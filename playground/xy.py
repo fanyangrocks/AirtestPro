@@ -1,5 +1,5 @@
-from airtest.cli.runner import AirtestCase, run_script
-from airtest.cli.parser import runner_parser
+from AirtestPro.cli.runner import AirtestCase, run_script
+from AirtestPro.cli.parser import runner_parser
 
 
 class CustomAirtestCase(AirtestCase):

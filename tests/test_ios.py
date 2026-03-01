@@ -5,9 +5,9 @@ import shutil
 import time
 import unittest
 import numpy
-from airtest.core.api import *
-from airtest.core.ios.ios import IOS, wda, CAP_METHOD
-from airtest import aircv
+from AirtestPro.core.api import *
+from AirtestPro.core.ios.ios import IOS, wda, CAP_METHOD
+from AirtestPro import aircv
 from .testconf import try_remove
 import cv2
 import warnings
