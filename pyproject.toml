@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools==45", "wheel"]
+requires = ["setuptools==69.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -34,7 +34,7 @@ dependencies = [
     "requests>=2.11.1",
     "six>=1.9.0,<=1.16.0",
     "mss==6.1.0",
-    "numpy<2.0",
+    "numpy==2.4.3",
     "opencv-contrib-python>=4.4.0.46,<=4.6.0.66",
     "facebook-wda==1.5.0",
     "pywinauto==0.6.3",
@@ -47,7 +47,7 @@ dependencies = [
 
 [project.optional-dependencies]
 tests = [
-    "nose"
+    "nose2"
 ]
 docs = [
     "sphinx",
